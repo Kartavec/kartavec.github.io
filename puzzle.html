@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript">
+
+		function checkAnswers(){
+			var result = document.getElementById("answer1").value;
+			var count = 0;
+			if(result == "капуста")
+				count++;
+
+			var result = document.getElementById("answer2").value;
+			if(result == "елка")
+				count++;
+
+			alert("Вы ответили правильно на " + count + " загадок");		
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span> 
+		<a href="#">Загадки</a><span>/</span>
+		<a href="#">Угадайка</a><span>/</span>
+		<a href="guess-2.html">Угадайка мультиплеер</a><span>/</span>
+	</div>
+
+	<div id="content">
+		<h1>Игра в загадки</h1>
+
+			<div id="box">
+				<h2>Я загадал несколько загадок, попробуй их угадать!</h2>
+
+				<p>Сто одежек и все без застежек</p>
+				<input type="text" id="answer1"></input>
+
+				<p>Зимой и летом одним цветом</p>
+				<input type="text" id="answer2"></input>
+
+				<br/>
+
+				<a href="#" onClick="checkAnswers();" >Ответить</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>	
+	</div>
+</body>
+</html>
